@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - Karibu Crust</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="index.html">Karibu Crust</a>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      <ul class="nav-links">
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><span class="cart-link">Cart <span id="cart-count" aria-live="polite">0</span></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <h1>Our products</h1>
+      <p>Fresh daily, locally sourced ingredients.</p>
+    </header>
+
+    <section class="product-list" aria-label="Product catalog">
+      <div class="product-grid">
+        <!-- Repeat cards: swap images/names/prices -->
+        <article class="product-card">
+          <img src="images/mandazi.jpg" alt="Mandazi" />
+          <h3>Mandazi</h3>
+          <p class="price">KES 50</p>
+          <p class="desc">Lightly sweet, perfect with chai.</p>
+          <button class="add-to-cart" data-name="Mandazi" data-price="50">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/samosa.jpg" alt="Samosa" />
+          <h3>Samosa</h3>
+          <p class="price">KES 70</p>
+          <p class="desc">Crispy pastry, savory filling.</p>
+          <button class="add-to-cart" data-name="Samosa" data-price="70">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/sourdough.jpg" alt="Sourdough Bread" />
+          <h3>Sourdough Bread</h3>
+          <p class="price">KES 300</p>
+          <p class="desc">Slow-fermented artisan loaf.</p>
+          <button class="add-to-cart" data-name="Sourdough Bread" data-price="300">Add to Cart</button>
+        </article>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Karibu Crust Bakery, Nairobi.</small>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

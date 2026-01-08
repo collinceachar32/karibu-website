@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karibu Crust Bakery</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="index.html">Karibu Crust</a>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html" class="cart-link">Cart <span id="cart-count" aria-live="polite">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" role="banner">
+      <div class="greeting">
+        <h1 id="dynamic-greeting">Welcome</h1>
+        <p>Today is <time id="today-date" datetime=""></time></p>
+      </div>
+      <p>Freshly baked goodness in Nairobi—mandazi, samosas, breads, and cakes.</p>
+      <a class="btn" href="products.html">Shop now</a>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <h2 id="featured-title">Featured products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/mandazi.jpg" alt="Mandazi, golden fried dough" />
+          <h3>Mandazi</h3>
+          <p class="price">KES 50</p>
+          <p class="desc">Lightly sweet, perfect with chai.</p>
+          <button class="add-to-cart" data-name="Mandazi" data-price="50">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/samosa.jpg" alt="Crispy samosa with spiced filling" />
+          <h3>Samosa</h3>
+          <p class="price">KES 70</p>
+          <p class="desc">Crispy pastry, savory filling.</p>
+          <button class="add-to-cart" data-name="Samosa" data-price="70">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/sourdough.jpg" alt="Artisan sourdough loaf" />
+          <h3>Sourdough Bread</h3>
+          <p class="price">KES 300</p>
+          <p class="desc">Slow-fermented, tangy and chewy.</p>
+          <button class="add-to-cart" data-name="Sourdough Bread" data-price="300">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Karibu Crust Bakery, Nairobi.</small>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
